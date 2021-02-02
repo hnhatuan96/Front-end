@@ -5,7 +5,6 @@
 
       <div class="modal__dialog">
         <div class="modal__header">
-          <slot name="header"/>
           <div>{{ dataHeader }}</div>
           <button type="button" class="modal__close" @click="closeModal()">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
@@ -18,12 +17,10 @@
         </div>
 
         <div class="modal__body">
-          <slot name="body"/>
           <div>{{ dataBody }}</div>
         </div>
 
         <div class="modal__footer">
-          <slot name="footer"/>
           <div>{{ dataFooter }}</div>
         </div>
       </div>
